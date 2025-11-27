@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    & .brand {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.main-nav {
+    ul {
+        display: flex;
+        gap: px-to-rem(24px);
+    }
+}
