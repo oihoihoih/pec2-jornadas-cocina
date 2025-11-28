@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 6rem;
 
     & .brand {
         display: flex;
@@ -13,9 +13,37 @@
     }
 }
 
+.brand {
+    &__logo {
+        width: px-to-rem(32px);
+        height: auto;
+        margin-right: px-to-rem(24px);
+    }
+    &__name {
+        font-size: px-to-rem(32px);
+        text-transform: uppercase;
+        font-weight: $font-bk;
+        letter-spacing: -4px;
+
+    }
+}
+
 .main-nav {
     ul {
         display: flex;
         gap: px-to-rem(24px);
+    }
+
+    &__item {
+        a {
+            font-size: px-to-rem(18px);
+            font-weight: $font-bold;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+
+            &:hover {
+                color: $primary-blue;
+            }
+        }
     }
 }
