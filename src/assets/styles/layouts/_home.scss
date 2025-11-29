@@ -4,10 +4,63 @@
 
 // Here styles for browsers that don't support css grid
 
+.home-grid {
+  margin-top: 10vh;
+  width: 100%;
+  min-height: 90vh;
 
-// Here styles for browsers that support css grid
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Video */
+.home-grid__video {
+  width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 16 / 9; 
+  overflow: hidden;
+}
+
+.home-grid__video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Title */
+.home-grid__title {
+  text-align: center;
+  font-weight: $font-bk;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 8vw, 6rem);
+}
+
+/* Subtitle */
+.home-grid__subtitle {
+  font-weight: $font-bk;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Icons */
+.home-grid__icon1,
+.home-grid__icon2 {
+  width: px-to-rem(48px);
+}
+
+/* Contents */
+.home-grid__content {
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+
+/* Here styles for browsers that support css grid */
 @supports (display: grid) {
-    // .home-layout styles
     .home-grid {
         margin-top: 10vh;
         display: grid;
@@ -59,7 +112,7 @@
         }
 
         &__content {
-            // Estilos comuntes
+            text-align: left;
             grid-row: 9 / span 2;
 
             &--1 {
