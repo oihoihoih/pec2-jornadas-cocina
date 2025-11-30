@@ -16,9 +16,10 @@
 
 <body>
   <include src="./views/header.html"></include>
-  <h1>Speakers</h1>
-  <main>
-    <section>
+  <main >
+    <h1>Speakers</h1>
+    <div class="speakers-list">
+    <section class="speakers-list__card">
       <picture>
         <source
           srcset="../assets/images/maria-lopez-500.webp 500w,../assets/images/maria-lopez-768.webp 768w,../assets/images/maria-lopez-1024.webp 1024w"
@@ -32,7 +33,8 @@
       <p>Cocinera apasionada por la cocina de cuchara, defensora del recetario tradicional andaluz.
       </p>
     </section>
-    <section>
+    
+    <section class="speakers-list__card">
        <picture>
         <source
           srcset="../assets/images/iker-etxeberria-500.webp 500w,../assets/images/iker-etxeberria-768.webp 768w,../assets/images/iker-etxeberria-1024.webp 1024w"
@@ -40,15 +42,14 @@
         <img src="../assets/images/iker-etxeberria-1024.jpg"
           srcset="../assets/images/iker-etxeberria-500.jpg 500w,../assets/images/iker-etxeberria-768.jpg 768w, ../assets/images/iker-etxeberria-1024.jpg 1024w"
           alt="Retrato de Iker Etxeberria" />
-        <!--Foto de Andrea Piacquadio: https://www.pexels.com/es-es/foto/close-up-retrato-foto-de-mujer-sonriente-en-top-rojo-posando-delante-de-un-fondo-blanco-3762952/ -->
+          <!-- Foto de Pavel Danilyuk: https://www.pexels.com/es-es/foto/hombre-persona-cara-enfrentarse-6593577/ -->
       </picture>
-      <!-- Foto de Pavel Danilyuk: https://www.pexels.com/es-es/foto/hombre-persona-cara-enfrentarse-6593577/ -->
       <h2>Iker Etxeberria (País Vasco)</h2>
       <p>Especialista en parrilla y producto de temporada, amante de los sabores intensos del norte.
       </p>
     </section>
     
-    <section>
+    <section class="speakers-list__card">
        <picture>
         <source
           srcset="../assets/images/xose-pereira-500.webp 500w,../assets/images/xose-pereira-768.webp 768w,../assets/images/xose-pereira-1024.webp 1024w"
@@ -62,7 +63,8 @@
       <p>Maestro en pescados y mariscos, transmite la esencia atlántica en cada uno de sus platos.
       </p>
     </section>
-    <section>
+
+    <section class="speakers-list__card">
        <picture>
         <source
           srcset="../assets/images/nuria-ferrer-500.webp 500w,../assets/images/nuria-ferrer-768.webp 768w,../assets/images/nuria-ferrer-1024.webp 1024w"
@@ -73,12 +75,11 @@
         <!--Foto de Andrea Piacquadio: https://www.pexels.com/es-es/foto/close-up-retrato-foto-de-mujer-sonriente-en-top-rojo-posando-delante-de-un-fondo-blanco-3762952/ -->
       </picture>
       <h2>Núria Ferrer (Cataluña)</h2>
-      <!-- Foto de Roman Biernacki: https://www.pexels.com/es-es/foto/moda-persona-bikini-gente-16032166/ -->
       <p>Explora la cocina catalana clásica con una mirada actual, respetando técnicas y sabores originales.
       </p>
     </section>
 
-    <section>
+    <section class="speakers-list__card">
       <picture>
         <source
           srcset="../assets/images/jean-petit-500.webp 500w,../assets/images/jean-petit-768.webp 768w,../assets/images/jean-petit-1024.webp 1024w"
@@ -94,7 +95,7 @@
       </p>
     </section>
 
-    <section>
+    <section class="speakers-list__card">
       <picture>
         <source
           srcset="../assets/images/lucia-bianchi-500.webp 500w,../assets/images/lucia-bianchi-768.webp 768w,../assets/images/lucia-bianchi-1024.webp 1024w"
@@ -108,6 +109,7 @@
       <p>Defensora de la cucina povera, experta en pastas frescas y recetas heredadas de su nonna.
       </p>
     </section>
+    </div>
   </main>
   <include src="./views/footer.html"></include>
   <script type="module" src="../assets/scripts/main.js"></script>

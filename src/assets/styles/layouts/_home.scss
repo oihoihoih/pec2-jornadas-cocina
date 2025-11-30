@@ -21,7 +21,6 @@
 
 /* Title */
 .home-grid__title {
-  text-align: center;
   font-weight: $font-bk;
   text-transform: uppercase;
 }
@@ -80,7 +79,6 @@
             font-weight: $font-bk;
             color: $color-regular;
             text-transform: uppercase;
-            text-align: center;
             font-size: clamp(5vh , 8vw, 16vh);
             grid-column: 1 / span 10;
             grid-row: 8;
