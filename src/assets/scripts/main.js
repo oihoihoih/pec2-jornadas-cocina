@@ -3,7 +3,7 @@
  * see commented examples below
  */
 // Import all of Bootstrap’s JS
-import 'bootstrap';
+import "bootstrap";
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
@@ -13,8 +13,7 @@ import 'bootstrap';
  */
 // Import all of Bootstrap’s JS
 
-
-+( function() {
++(function () {
   const university = "UOC";
   console.log(`Hello, ${university}!`);
-} )();
+})();

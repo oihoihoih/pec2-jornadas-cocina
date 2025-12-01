@@ -1,9 +1,8 @@
 @use "../abstracts" as *;
 
-
 @layer layouts {
-
   // Here styles for browsers that don't support css grid
+
   /* Video */
   .home-grid__video {
     overflow: hidden;
@@ -42,11 +41,9 @@
     display: inline;
   }
 
-
   /* Here styles for browsers that support css grid */
   @supports (display: grid) {
     .home-grid {
-      margin-top: 10vh;
       display: grid;
       grid-template-columns: repeat(10, 1fr);
       grid-template-rows: repeat(10, 1fr);
@@ -61,7 +58,7 @@
 
         @media screen and (max-width: 900px) {
           grid-column: 1 / span 10;
-          grid-row: 2 /span 5;
+          grid-row: 2 / span 5;
         }
 
         & video {
@@ -69,7 +66,6 @@
           height: 100%;
           object-fit: cover;
           display: block;
-
         }
       }
 

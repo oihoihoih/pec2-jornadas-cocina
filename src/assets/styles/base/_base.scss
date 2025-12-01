@@ -1,7 +1,6 @@
 @use "../abstracts" as *;
 // Base styles
 @layer base {
-
   html,
   body {
     overflow-x: hidden;
@@ -19,7 +18,6 @@
   }
 
   main {
-    margin-top: 10vh;
     width: 100%;
     min-height: 90vh;
   }
@@ -37,5 +35,4 @@
   ul {
     list-style-type: none;
   }
-
 }

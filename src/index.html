@@ -1,52 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <title>Fogonazo! Jornadas de cocina tradicional</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-  <title>Fogonazo! Jornadas de cocina tradicional</title>
-</head>
-
-<body>
-  <include src="./views/header.html"></include>
-  <main class="home-grid">
-    <!-- Ejemplo: https://letude.group/  -->
-    <div class="home-grid__video">
-      <video autoplay loop muted playsinline preload="auto">
-        <source src="./assets/images/hero-video.mp4" type="video/mp4">
-        <source src="./assets/images/hero-video.webm" type="video/webm">
-        Tu navegador no soporta vídeo HTML5.
-      </video>
-    </div>
-    <h1 class="home-grid__title">Fogonazo!</h1>
-    <h2 class="home-grid__subtitle">Jornadas de cocina tradicional</h2>
-    <img class="home-grid__icon1" src="./assets/images/fuego-negro.svg" alt="Icono de una llama de fuego">
-    <img class="home-grid__icon2" src="./assets/images/fuego-negro.svg" alt="Icono de una llama de fuego">
-    <div class="home-grid__content">
-      <div class="home-grid__content--1">
-        <h3>Talleres</h3>
-        <p>Aprende nuevas técnicas culinarias de la mano de nuestros invitados especiales</p>
+  <body>
+    <include src="./views/header.html"></include>
+    <main class="home-grid">
+      <!-- Ejemplo: https://letude.group/  -->
+      <div class="home-grid__video">
+        <video autoplay loop muted playsinline preload="auto">
+          <source src="./assets/images/hero-video.mp4" type="video/mp4" />
+          <source src="./assets/images/hero-video.webm" type="video/webm" />
+          Tu navegador no soporta vídeo HTML5.
+        </video>
       </div>
-      <div class="home-grid__content--2">
-        <h3>Charlas</h3>
-        <p>Charlas donde la cocina tradicional y local son protagonistas</p>
+      <h1 class="home-grid__title">Fogonazo!</h1>
+      <h2 class="home-grid__subtitle">Jornadas de cocina tradicional</h2>
+      <img
+        class="home-grid__icon1"
+        src="./assets/images/fuego-negro.svg"
+        alt="Icono de una llama de fuego"
+      />
+      <img
+        class="home-grid__icon2"
+        src="./assets/images/fuego-negro.svg"
+        alt="Icono de una llama de fuego"
+      />
+      <div class="home-grid__content">
+        <div class="home-grid__content--1">
+          <h3>Talleres</h3>
+          <p>
+            Aprende nuevas técnicas culinarias de la mano de nuestros invitados
+            especiales
+          </p>
+        </div>
+        <div class="home-grid__content--2">
+          <h3>Charlas</h3>
+          <p>Charlas donde la cocina tradicional y local son protagonistas</p>
+        </div>
+        <div class="home-grid__content--3">
+          <h3>Contactos</h3>
+          <p>
+            Espacios dedicados para crear contactos y alianzas generando nuevas
+            redes
+          </p>
+        </div>
       </div>
-      <div class="home-grid__content--3">
-        <h3>Contactos</h3>
-        <p>Espacios dedicados para crear contactos y alianzas generando nuevas redes</p>
-      </div>
-    </div>
-  </main>
+    </main>
 
-
-  <include src="./views/footer.html"></include>
-  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-</body>
-
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
 </html>
