@@ -1,7 +1,8 @@
 @use "../abstracts" as *;
 
-.speakers-list__card {
-     flex: 0 0 100%;
+@layer modules {
+    .speakers-list__card {
+        flex: 0 0 100%;
         max-width: 100%;
         background: $color-xlight;
         border-radius: 1rem;
@@ -29,3 +30,4 @@
 
         }
     }
+}

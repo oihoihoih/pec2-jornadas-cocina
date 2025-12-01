@@ -1,9 +1,11 @@
 @use "../abstracts" as *;
 
-.speakers-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    padding: 2rem;
+@layer layouts {
+    .speakers-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        padding: 2rem;
+    }
 }
