@@ -3,7 +3,7 @@
  * see commented examples below
  */
 // Import all of Bootstrap’s JS
-import * as bootstrap from 'bootstrap'
+import 'bootstrap';
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';

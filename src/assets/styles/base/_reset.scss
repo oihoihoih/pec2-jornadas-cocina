@@ -1,3 +1,74 @@
+
 @layer reset {
-    @import "~node_modules/the-new-css-reset/css/reset.css";
+  /***
+    Basic CSS Reset
+    Solo resetea márgenes, paddings y normaliza box-sizing
+  ***/
+
+  /* Reset de márgenes y paddings */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Box-sizing para todos los elementos */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* Normalizar HTML y body */
+  html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Imágenes responsive por defecto */
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* Quitar estilos de listas */
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  /* Normalizar inputs y buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  /* Quitar decoración de links por defecto */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Mejorar renderizado de tablas */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* Fix para atributo hidden */
+  [hidden] {
+    display: none !important;
+  }
 }
