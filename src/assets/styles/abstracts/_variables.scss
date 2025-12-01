@@ -1,4 +1,4 @@
-@import "bootstrap/scss/functions";
+
 
 //  Fonts variables
 $font-sans-serif: "Inter Tight", "Helvetica", sans-serif;
@@ -12,12 +12,22 @@ $font-bk: 900;
 
 
 // Color variables
+$color-dark-complementary: #025951;
+$color-medium: #bf500f;
+$color-regular: #ed6e12;
+$color-light: #d9965b;
+$color-xlight: #f2e6df;
+$color-light-complementary: #c1d4d9;
 
-$color-dark: #591902;
-$color-medium: #BF4904;
-$color-regular: #D96704;
-$color-light: #F29F05;
-$color-xlight: #F2D16D;
+$color-white: #fffaf7;
+$color-black: #333231;
 
-$color-white: #f9f9f9;
-$color-black: #121212;
+// Bootstrap overrides
+$primary: $color-medium;
+$secondary: $color-light;
+$success: $color-dark-complementary;
+$danger: $color-regular;
+$warning: $color-light;
+$info: $color-light-complementary;
+$light: $color-white;
+$dark: $color-black;
