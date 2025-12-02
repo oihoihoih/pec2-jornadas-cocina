@@ -1,10 +1,6 @@
 @use "../abstracts" as *;
 
 @layer layouts {
-    .navbar {
-        --bs-nav-link-color: #ed6e12; /* $color-regular */
-        --bs-nav-link-hover-color: #bf500f; /* $color-medium */
-    }
     .container-fluid {
         justify-content: space-between;
     }
@@ -36,6 +32,7 @@
 
     .nav-link {
         text-transform: uppercase;
+        letter-spacing: -1px;
     }
     
 }

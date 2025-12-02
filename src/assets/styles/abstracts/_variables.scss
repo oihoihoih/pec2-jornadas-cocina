@@ -20,7 +20,7 @@ $color-xlight: #f2e6df;
 $color-light-complementary: #c1d4d9;
 
 $color-white: #fffaf7;
-$color-black: #333231;
+$color-black: #1e1e1e;
 
 // Bootstrap overrides
 $primary: $color-medium;
@@ -34,11 +34,11 @@ $dark: $color-black;
 
 // Navbar overrides
 $nav-link-font-weight: 800;
-
-// Nav link colors (Bootstrap variables)
-$nav-link-hover-color: $color-medium;
 $nav-link-font-size: 1.5rem;
-$nav-link-color: rgba($color-black, 1);
+
+// Nav link colors
+$navbar-light-color: rgba($color-black, 1);
+$navbar-light-hover-color: $color-medium;
 
 // Card overrides
 $card-bg: $color-xlight;
