@@ -1,37 +1,41 @@
 @use "../abstracts" as *;
 
 @layer layouts {
-  .container-fluid {
-    justify-content: space-between;
-  }
-
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-  }
-
-  .brand {
-    &__logo {
-      width: px-to-rem(32px);
-      height: auto;
-      margin-right: px-to-rem(24px);
+    .navbar {
+        --bs-nav-link-color: #ed6e12; /* $color-regular */
+        --bs-nav-link-hover-color: #bf500f; /* $color-medium */
+    }
+    .container-fluid {
+        justify-content: space-between;
     }
 
-    &__name {
-      font-size: px-to-rem(32px);
-      text-transform: uppercase;
-      color: rgba($color-black, 1);
-      font-weight: $font-bk;
-      letter-spacing: -4px;
-
-      @media screen and (max-width: 450px) {
-        display: none;
-      }
+    .navbar-brand {
+        display: flex;
+        align-items: center;
     }
-  }
 
-  .nav-link {
-    text-transform: uppercase;
-    color: rgba($color-black, 1);
-  }
+    .brand {
+        &__logo {
+            width: px-to-rem(32px);
+            height: auto;
+            margin-right: px-to-rem(24px);
+        }
+
+        &__name {
+            font-size: px-to-rem(32px);
+            text-transform: uppercase;
+            font-weight: $font-bk;
+            letter-spacing: -4px;
+            @media screen and (max-width: 450px) {
+                display: none;
+                
+            }
+
+        }
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+    }
+    
 }

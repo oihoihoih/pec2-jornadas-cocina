@@ -1,11 +1,15 @@
+
+
 //  Fonts variables
 $font-sans-serif: "Inter Tight", "Helvetica", sans-serif;
 
 // Font weights
 $font-thin: 100;
 $font-regular: 400;
-$font-bold: 700;
+$font-bold: 700;    
 $font-bk: 900;
+
+
 
 // Color variables
 $color-dark-complementary: #025951;
@@ -14,6 +18,7 @@ $color-regular: #ed6e12;
 $color-light: #d9965b;
 $color-xlight: #f2e6df;
 $color-light-complementary: #c1d4d9;
+
 $color-white: #fffaf7;
 $color-black: #333231;
 
@@ -29,4 +34,8 @@ $dark: $color-black;
 
 // Navbar overrides
 $nav-link-font-weight: 800;
+// Nav link colors (Bootstrap variables)
+$nav-link-color: $color-regular;
+$nav-link-hover-color: $color-medium;
 $nav-link-font-size: 1.5rem;
+$nav-link-color: rgba($color-black, 1);
