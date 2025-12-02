@@ -1,28 +1,36 @@
-
-
-//  Fonts variables
+/* Fonts variables */
 $font-sans-serif: "Inter Tight", "Helvetica", sans-serif;
 
-// Font weights
+/* Font weights */
 $font-thin: 100;
 $font-regular: 400;
+$font-medium: 500;
 $font-bold: 700;    
 $font-bk: 900;
 
-
-
-// Color variables
+/* Color variables */
 $color-dark-complementary: #025951;
 $color-medium: #bf500f;
 $color-regular: #ed6e12;
 $color-light: #d9965b;
 $color-xlight: #f2e6df;
 $color-light-complementary: #c1d4d9;
-
 $color-white: #fffaf7;
 $color-black: #1e1e1e;
 
-// Bootstrap overrides
+/*-----------------
+BOOTSTRAP OVERRIDES
+-------------------*/
+
+/* Typography */
+$font-family-base: $font-sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.5; 
+$headings-font-family: $font-sans-serif;
+$headings-font-weight: $font-medium;
+
+
+/* Color system */
 $primary: $color-medium;
 $secondary: $color-light;
 $success: $color-dark-complementary;
@@ -32,15 +40,15 @@ $info: $color-light-complementary;
 $light: $color-white;
 $dark: $color-black;
 
-// Navbar overrides
+/* Navbar overrides */
 $nav-link-font-weight: 800;
 $nav-link-font-size: 1.5rem;
 
-// Nav link colors
+/* Nav link colors */
 $navbar-light-color: rgba($color-black, 1);
 $navbar-light-hover-color: $color-medium;
 
-// Card overrides
+/* Card overrides */
 $card-bg: $color-xlight;
 $card-border-radius: 1rem;
 $card-border-width: 0;

@@ -203,12 +203,46 @@
         </section>
       </div>
 
-      <footer>
-        <h3>
-          Si estás interesado en recibir las últimas noticias, apúntate a
-          nuestra newsletter.
-        </h3>
-        <button>¡Apúntate!</button>
+      <footer class="modal-launcher">
+        <h5>
+          Si estás interesado en recibir las últimas noticias, apúntate a nuestra newsletter.
+        </h5>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsletterModal"
+          data-bs-whatever="@mdo">newsletter</button>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="newsletterModalLabel">Quiero recibir la newsletter</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="newsletterForm" novalidate>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Tu email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                    <div class="invalid-feedback">
+                      Por favor, introduce un email válido.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email2" class="form-label">Repite tu email:</label>
+                    <input type="email" class="form-control" id="email2" name="email2" placeholder="tucorreo@ejemplo.com" required>
+                    <div class="invalid-feedback" id="email2-feedback">
+                      Por favor, repite tu email.
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" form="newsletterForm" class="btn btn-primary">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </main>
     <include src="./views/footer.html"></include>
