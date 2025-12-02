@@ -34,8 +34,18 @@ $dark: $color-black;
 
 // Navbar overrides
 $nav-link-font-weight: 800;
+
 // Nav link colors (Bootstrap variables)
-$nav-link-color: $color-regular;
 $nav-link-hover-color: $color-medium;
 $nav-link-font-size: 1.5rem;
 $nav-link-color: rgba($color-black, 1);
+
+// Card overrides
+$card-bg: $color-xlight;
+$card-border-radius: 1rem;
+$card-border-width: 0;
+$card-box-shadow: 0 8px 20px rgba($color-black, 0.2);
+$card-cap-bg: transparent;
+$card-spacer-y: 1rem;
+$card-spacer-x: 1rem;
+$card-title-spacer-y: 0.5rem;
