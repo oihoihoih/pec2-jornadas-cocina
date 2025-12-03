@@ -13,7 +13,7 @@ $color-dark-complementary: #025951;
 $color-medium: #bf500f;
 $color-regular: #ed6e12;
 $color-light: #d9965b;
-$color-xlight: #f2e6df;
+$color-xlight: #fcefa9;
 $color-light-complementary: #c1d4d9;
 $color-white: #fffaf7;
 $color-black: #1e1e1e;
@@ -49,7 +49,7 @@ $navbar-light-color: rgba($color-black, 1);
 $navbar-light-hover-color: $color-medium;
 
 /* Card overrides */
-$card-bg: $color-xlight;
+$card-bg: $color-white;
 $card-border-radius: 1rem;
 $card-border-width: 0;
 $card-box-shadow: 0 8px 20px rgba($color-black, 0.2);
