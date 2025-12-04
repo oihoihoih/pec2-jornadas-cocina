@@ -1,8 +1,7 @@
 @use "../abstracts" as *;
 
 @layer layouts {
-  // Here styles for browsers that don't support css grid
-
+  /*Here styles for browsers that don't support css grid */
   /* Video */
   .home-grid__video {
     overflow: hidden;
@@ -51,12 +50,15 @@
       width: 100%;
       height: 90vh;
 
+      container-type: inline-size;
+      container-name: home-grid;
+
       &__video {
         grid-column: 3 / span 8;
         grid-row: 3 / span 6;
         overflow: hidden;
 
-        @media screen and (max-width: 900px) {
+        @container home-grid (max-width: 900px) {
           grid-column: 2 / span 10;
           grid-row: 2 / span 5;
         }
@@ -78,7 +80,7 @@
         grid-row: 8;
         mix-blend-mode: color-dodge;
 
-        @media screen and (max-width: 900px) {
+        @container home-grid (max-width: 900px) {
           grid-column: 2 / span 10;
           grid-row: 6;
         }
@@ -92,7 +94,7 @@
         grid-column: 2 / span 1;
         grid-row: 2 / span 2;
 
-        @media screen and (max-width: 900px) {
+        @container home-grid (max-width: 900px) {
           grid-column: 2 / span 2;
           grid-row: 2;
           color: $color-xlight;
@@ -120,7 +122,7 @@
         justify-content: space-between;
         gap: 1rem;
 
-        @media screen and (max-width: 900px) {
+        @container home-grid (max-width: 900px) {
           grid-column: 2 / span 10;
           grid-row: 8 / span 2;
           flex-direction: column;
