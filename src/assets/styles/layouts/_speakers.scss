@@ -6,7 +6,10 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem 6rem;
+
+    // Container query for responsive layout
+    container-type: inline-size;
   }
 
   .modal-launcher {

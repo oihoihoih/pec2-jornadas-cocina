@@ -1,1 +1,76 @@
-.blog-post {}
+@use "../abstracts" as *;
+
+.blog-post {
+    &__hero {
+        width: 100%;
+        height: 50vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        &--header {
+            position: absolute;
+            top: 50%;
+            max-width: 60%;
+
+            & h2 {
+                font-size: clamp(2rem, 4vw, 4rem);
+                font-weight: $font-bk;
+                text-transform: uppercase;
+                line-height: .8;
+            }
+        }
+
+        :where(h2, p) {
+            color: $color-white;
+            text-align: center;
+        }
+    }
+
+    figure:has(blockquote) {
+        padding: px-to-rem(16px);
+        border-left: 4px solid $color-medium;
+    }
+
+    &__list {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        border-top: 1px solid $color-light;
+        border-bottom: 1px solid $color-light;
+
+        &--number {
+            text-align: center;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            border: 1px solid $color-black;
+            border-radius: 50%;
+        }
+
+        &--heading {
+            margin-left: 2.5rem;
+        }
+    }
+
+    dt:has(span) {
+        display: flex;
+        position: relative;
+    }
+
+    dd:has(p) {
+        margin-left: 2.5rem;
+    }
+}
