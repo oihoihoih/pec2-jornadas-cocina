@@ -1,0 +1,68 @@
+@use "../abstracts" as *;
+
+.contact-grid {
+    padding: 10vh 10vh 0 10vh;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    width: 100vw;
+    height: 100%;
+
+    &__heading {
+        grid-column: 1 / span 6;
+        grid-row: 1 / span 2;
+
+        h2:has(span) {
+            font-size: clamp(1rem, 4vw, 6rem);
+            font-weight: $font-thin;
+            text-transform: uppercase;
+            color: $color-regular;
+            line-height: 1.2;
+
+            & span {
+                display: block;
+            }
+        }
+    }
+
+    &__form {
+        grid-column: 7 / span 6;
+        grid-row: 2 / span 2;
+
+    }
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__identification, &__contact {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: .5rem;
+        border: none;
+        border-bottom: 1px solid $color-black;
+        background-color: transparent;
+    }
+
+    &__submit {
+        width: fit-content;
+        padding: .75rem 2rem;
+        border: 1px solid $color-black;
+        border-radius: .4rem;
+        background-color: transparent;
+        color: $color-black;
+        text-transform: uppercase;
+        font-weight: $font-regular;
+        cursor: pointer;
+    }
+
+}
