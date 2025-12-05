@@ -1,52 +1,86 @@
 <!doctype html>
 
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <title>Fogonazo! Contact</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="../assets/styles/main.scss" />
-  <!-- do not remove this line! -->
-  <title>Fogonazo! Contact</title>
-</head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main class="contact-grid">
+      <h1 class="visually-hidden">Contact</h1>
+      <section class="contact-grid__heading">
+        <h2>
+          <span>Todo empieza aquí</span><span>Contacta con nosotros</span
+          ><span>y cuéntanos tu historia</span>
+        </h2>
+      </section>
 
-<body>
-  <include src="./views/header.html"></include>
-  <main class="contact-grid">
-    <h1 class="visually-hidden">Contact </h1>
-    <section class="contact-grid__heading">
-      <h2><span>Todo empieza aquí</span><span>Contacta con nosotros</span><span>y cuéntanos tu historia</span></h2>
-    </section>
+      <section class="contact-grid__form">
+        <!-- https://www.elicyon.com/contact -->
+        <form
+          class="contact-form"
+          name="contact-form"
+          method="POST"
+          data-netlify="true"
+        >
+          <div class="contact-form__identification">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nombre completo"
+              required
+            />
 
-    <section class="contact-grid__form">
-      <!-- https://www.elicyon.com/contact -->
-      <form class="contact-form" name="contact-form" method="POST" data-netlify="true">
-        <div class="contact-form__identification">
-          <input type="text" name="name" id="name" placeholder="Nombre completo" required />
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder="Apellidos"
+              required
+            />
+          </div>
+          <div class="contact-form__contact">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Correo electrónico"
+              required
+            />
 
-          <input type="text" name="surname" id="surname" placeholder="Apellidos" required />
-        </div>
-        <div class="contact-form__contact">
-          <input type="email" name="email" id="email" placeholder="Correo electrónico" required />
+            <input type="tel" name="phone" id="phone" placeholder="Teléfono" />
+          </div>
+          <div class="contact-form__message">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Escribe tu mensaje aquí..."
+              required
+            ></textarea>
+          </div>
 
-          <input type="tel" name="phone" id="phone" placeholder="Teléfono" />
-        </div>
-        <div class="contact-form__message">
-          <textarea name="message" id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
-        </div>
-
-        <div >
-          <button class="main-button contact-form__submit" type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
-  <include src="./views/footer.html"></include>
-  <script type="module" src="../assets/scripts/main.js"></script>
-  <!-- do not remove this line! -->
-</body>
-
+          <div>
+            <button class="main-button contact-form__submit" type="submit">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="../assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
 </html>

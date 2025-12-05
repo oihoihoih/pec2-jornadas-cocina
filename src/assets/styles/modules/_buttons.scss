@@ -1,14 +1,14 @@
 @use "../abstracts" as *;
 
 /* Contact Form Buttons */
- .main-button {
-        width: fit-content;
-        padding: .75rem 2rem;
-        border: 1px solid $color-black;
-        border-radius: .4rem;
-        background-color: transparent;
-        color: $color-black;
-        text-transform: uppercase;
-        font-weight: $font-regular;
-        cursor: pointer;
-    }
+.main-button {
+  width: fit-content;
+  padding: 0.75rem 2rem;
+  border: 1px solid $color-black;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  color: $color-black;
+  text-transform: uppercase;
+  font-weight: $font-regular;
+  cursor: pointer;
+}

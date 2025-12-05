@@ -17,8 +17,7 @@
     ],
     "comment-empty-line-before": ["always",
       { 
-        "except": ["first-nested"],
-        "ignore": ["after-comment"]
+        "ignore": ["after-comment", "first-nested"]
       }
     ],
     "scss/dollar-variable-pattern": "^[a-z][a-z0-9-]*$",

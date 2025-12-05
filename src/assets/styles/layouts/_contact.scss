@@ -1,34 +1,33 @@
 @use "../abstracts" as *;
 
 .contact-grid {
-    padding: 10vh 10vh 0 10vh;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, auto);
-    width: 100vw;
-    height: 100%;
+  padding: 10vh 10vh 0 10vh;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, auto);
+  width: 100vw;
+  height: 100%;
 
-    &__heading {
-        grid-column: 1 / span 6;
-        grid-row: 1 / span 2;
+  &__heading {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 2;
 
-        h2:has(span) {
-            font-size: clamp(1rem, 4vw, 6rem);
-            font-weight: $font-thin;
-            text-transform: uppercase;
-            color: $color-complementary;
-            line-height: 1.2;
+    h2:has(span) {
+      font-size: clamp(1rem, 4vw, 6rem);
+      font-weight: $font-thin;
+      text-transform: uppercase;
+      color: $color-complementary;
+      line-height: 1.2;
 
-            & span {
-                display: block;
-            }
-        }
+      & span {
+        display: block;
+      }
     }
+  }
 
-    &__form {
-        grid-column: 7 / span 6;
-        grid-row: 2 / span 2;
-
-    }
+  &__form {
+    grid-column: 7 / span 6;
+    grid-row: 2 / span 2;
+  }
 }

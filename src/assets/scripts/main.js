@@ -18,48 +18,47 @@ import * as bootstrap from "bootstrap";
   console.log(`Hello, ${university}!`);
 })();
 
-
 // Newsletter form validation
-const newsletterForm = document.getElementById('newsletterForm');
-const newsletterModal = document.getElementById('newsletterModal');
+const newsletterForm = document.getElementById("newsletterForm");
+const newsletterModal = document.getElementById("newsletterModal");
 
 if (newsletterForm) {
-  newsletterForm.addEventListener('submit', function(event) {
+  newsletterForm.addEventListener("submit", function (event) {
     event.preventDefault();
     event.stopPropagation();
 
-    const email1 = document.getElementById('email');
-    const email2 = document.getElementById('email2');
-    const email2Feedback = document.getElementById('email2-feedback');
+    const email1 = document.getElementById("email");
+    const email2 = document.getElementById("email2");
+    const email2Feedback = document.getElementById("email2-feedback");
 
     // Validate tha emails match
     if (email1.value !== email2.value) {
-      email2.setCustomValidity('Los emails no coinciden');
-      email2Feedback.textContent = 'Los emails no coinciden.';
+      email2.setCustomValidity("Los emails no coinciden");
+      email2Feedback.textContent = "Los emails no coinciden.";
     } else {
-      email2.setCustomValidity('');
-      email2Feedback.textContent = 'Por favor, repite tu email.';
+      email2.setCustomValidity("");
+      email2Feedback.textContent = "Por favor, repite tu email.";
     }
 
     // Bootstrap style validation
-    newsletterForm.classList.add('was-validated');
+    newsletterForm.classList.add("was-validated");
 
     // If the form is valid, close it
     if (newsletterForm.checkValidity()) {
       const modal = bootstrap.Modal.getInstance(newsletterModal);
       modal.hide();
-      
+
       // Reset the form
       newsletterForm.reset();
-      newsletterForm.classList.remove('was-validated');
-      
+      newsletterForm.classList.remove("was-validated");
+
       // Show success message
-      alert('¡Gracias por suscribirte a nuestra newsletter!');
+      alert("¡Gracias por suscribirte a nuestra newsletter!");
     }
   });
 
   // Resetear validación custom cuando el usuario escribe
-  document.getElementById('email2').addEventListener('input', function() {
-    this.setCustomValidity('');
+  document.getElementById("email2").addEventListener("input", function () {
+    this.setCustomValidity("");
   });
 }

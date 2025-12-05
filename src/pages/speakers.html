@@ -20,7 +20,6 @@
     <main>
       <h1>Speakers</h1>
       <div class="speakers-list">
-
         <section class="card">
           <picture class="card-img-top">
             <source
@@ -111,8 +110,8 @@
               cada uno de sus platos.
             </p>
           </div>
-        </section>  
-          
+        </section>
+
         <section class="card">
           <picture class="card-img-top">
             <source
@@ -164,14 +163,14 @@
             />
             <!-- Foto de Nicholas Swatz: https://www.pexels.com/es-es/foto/hombre-persona-cara-enfrentarse-2770596/ -->
           </picture>
-          <div class="card-body"> 
+          <div class="card-body">
             <h3 class="card-title">Jean Petit (Francia)</h3>
             <p class="card-text">
-              Chef formado en bistrós parisinos, enamorado de las salsas, fondos y
-              cocina lenta tradicional.
+              Chef formado en bistrós parisinos, enamorado de las salsas, fondos
+              y cocina lenta tradicional.
             </p>
           </div>
-        </section>  
+        </section>
 
         <section class="card">
           <picture class="card-img-top">
@@ -195,41 +194,79 @@
             <!-- Foto de cottonbro studio: https://www.pexels.com/es-es/foto/mujer-en-camisa-a-cuadros-en-blanco-y-negro-5822227/ -->
           </picture>
           <div class="card-body">
-          <h3 class="card-title">Lucia Bianchi (Italia)</h3>
-          <p class="card-text">
-            Defensora de la cucina povera, experta en pastas frescas y recetas
-            heredadas de su nonna.
-          </p>
+            <h3 class="card-title">Lucia Bianchi (Italia)</h3>
+            <p class="card-text">
+              Defensora de la cucina povera, experta en pastas frescas y recetas
+              heredadas de su nonna.
+            </p>
+          </div>
         </section>
       </div>
 
       <footer class="modal-launcher">
         <h5>
-          Si estás interesado en recibir las últimas noticias, apúntate a nuestra newsletter.
+          Si estás interesado en recibir las últimas noticias, apúntate a
+          nuestra newsletter.
         </h5>
-        <button type="button" class="main-button" data-bs-toggle="modal" data-bs-target="#newsletterModal"
-          data-bs-whatever="@mdo">newsletter</button>
-      
+        <button
+          type="button"
+          class="main-button"
+          data-bs-toggle="modal"
+          data-bs-target="#newsletterModal"
+          data-bs-whatever="@mdo"
+        >
+          newsletter
+        </button>
+
         <!-- Modal -->
-        <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+        <div
+          class="modal fade"
+          id="newsletterModal"
+          tabindex="-1"
+          aria-labelledby="newsletterModalLabel"
+          aria-hidden="true"
+        >
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="newsletterModalLabel">Quiero recibir la newsletter</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5" id="newsletterModalLabel">
+                  Quiero recibir la newsletter
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
               </div>
               <div class="modal-body">
                 <form id="newsletterForm" novalidate>
                   <div class="mb-3">
                     <label for="email" class="form-label">Tu email:</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="tucorreo@ejemplo.com"
+                      required
+                    />
                     <div class="invalid-feedback">
                       Por favor, introduce un email válido.
                     </div>
                   </div>
                   <div class="mb-3">
-                    <label for="email2" class="form-label">Repite tu email:</label>
-                    <input type="email" class="form-control" id="email2" name="email2" placeholder="tucorreo@ejemplo.com" required>
+                    <label for="email2" class="form-label"
+                      >Repite tu email:</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email2"
+                      name="email2"
+                      placeholder="tucorreo@ejemplo.com"
+                      required
+                    />
                     <div class="invalid-feedback" id="email2-feedback">
                       Por favor, repite tu email.
                     </div>
@@ -237,8 +274,20 @@
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="submit" form="newsletterForm" class="btn btn-primary">Enviar</button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <button
+                  type="submit"
+                  form="newsletterForm"
+                  class="btn btn-primary"
+                >
+                  Enviar
+                </button>
               </div>
             </div>
           </div>
