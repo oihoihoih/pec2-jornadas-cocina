@@ -97,8 +97,6 @@
         @container home-grid (max-width: 900px) {
           grid-column: 2 / span 2;
           grid-row: 2;
-          color: $color-xlight;
-          // text-transform: uppercase;
           padding: 1rem;
         }
       }

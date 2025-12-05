@@ -37,7 +37,7 @@
         }
 
         :where(h2, p) {
-            color: $color-white;
+            color: $color-regular;
             text-align: center;
         }
     }
@@ -62,15 +62,15 @@
 
     figure:has(blockquote) {
         padding: px-to-rem(16px);
-        border-left: 4px solid $color-medium;
+        border-left: 4px solid $color-regular;
     }
 
     &__list {
         padding-top: 2rem;
         padding-bottom: 1rem;
         margin-bottom: 2rem;
-        border-top: 1px solid $color-light;
-        border-bottom: 1px solid $color-light;
+        border-top: 1px solid $color-grey;
+        border-bottom: 1px solid $color-grey;
 
         &--number {
             text-align: center;
@@ -81,7 +81,7 @@
             justify-content: center;
             position: absolute;
             left: 0;
-            border: 1px solid $color-black;
+            border: 1px solid $color-grey;
             border-radius: 50%;
         }
 

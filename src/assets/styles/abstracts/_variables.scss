@@ -9,13 +9,14 @@ $font-bold: 700;
 $font-bk: 900;
 
 /* Color variables */
-$color-dark-complementary: #025951;
-$color-medium: #bf500f;
-$color-regular: #ed6e12;
-$color-light: #d9965b;
+$color-complementary: #5268ff;
+$color-info: #a8b3ff;
+$color-medium: #fc7851;
+$color-regular: #fc3e00;
+$color-light: #fcb1a9   ;
 $color-xlight: #fcefa9;
-$color-light-complementary: #c1d4d9;
 $color-white: #fffaf7;
+$color-grey: #7d7d7d;
 $color-black: #1e1e1e;
 
 /*-----------------
@@ -31,12 +32,12 @@ $headings-font-weight: $font-medium;
 
 
 /* Color system */
-$primary: $color-medium;
-$secondary: $color-light;
-$success: $color-dark-complementary;
+$primary: $color-complementary;
+$secondary: $color-grey;
+$success:$color-medium;
 $danger: $color-regular;
 $warning: $color-light;
-$info: $color-light-complementary;
+$info: $color-info;
 $light: $color-white;
 $dark: $color-black;
 
