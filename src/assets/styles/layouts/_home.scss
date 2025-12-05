@@ -1,7 +1,9 @@
 @use "../abstracts" as *;
 
 @layer layouts {
+
   /*Here styles for browsers that don't support css grid */
+  
   /* Video */
   .home-grid__video {
     overflow: hidden;
@@ -92,7 +94,7 @@
         text-align: left;
         line-height: 1;
         grid-column: 2 / span 1;
-        grid-row: 2 / span 2;
+        grid-row: 2 / span;
 
         @container home-grid (max-width: 900px) {
           grid-column: 2 / span 2;
