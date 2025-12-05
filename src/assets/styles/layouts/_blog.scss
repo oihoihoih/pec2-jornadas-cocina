@@ -4,23 +4,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  container-type: inline-size;
   container-name: blog-post;
+  container-type: inline-size;
+  gap: 1rem;
 
   &__hero {
-    width: 100%;
-    height: 50vh;
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
 
     &--image {
+      display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
     }
 
     &--header {
@@ -31,8 +31,8 @@
       & h2 {
         font-size: clamp(2rem, 4vw, 4rem);
         font-weight: $font-bk;
-        text-transform: uppercase;
         line-height: 0.8;
+        text-transform: uppercase;
       }
     }
 
@@ -65,23 +65,23 @@
   }
 
   &__list {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    border-top: 1px solid $color-grey;
     border-bottom: 1px solid $color-grey;
+    border-top: 1px solid $color-grey;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
 
     &--number {
-      text-align: center;
-      width: 2rem;
-      height: 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       position: absolute;
       left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2rem;
+      height: 2rem;
       border: 1px solid $color-grey;
       border-radius: 50%;
+      text-align: center;
     }
 
     &--heading {
@@ -90,8 +90,8 @@
   }
 
   dt:has(span) {
-    display: flex;
     position: relative;
+    display: flex;
   }
 
   dd:has(p) {

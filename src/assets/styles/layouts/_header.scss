@@ -19,9 +19,9 @@
 
     &__name {
       font-size: px-to-rem(32px);
-      text-transform: uppercase;
       font-weight: $font-bk;
       letter-spacing: -4px;
+      text-transform: uppercase;
       @media screen and (max-width: 450px) {
         display: none;
       }
@@ -29,7 +29,7 @@
   }
 
   .nav-link {
-    text-transform: uppercase;
     letter-spacing: -1px;
+    text-transform: uppercase;
   }
 }

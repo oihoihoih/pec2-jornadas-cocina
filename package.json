@@ -50,6 +50,7 @@
     "sharp": "^0.33.5",
     "stylelint": "^16.26.0",
     "stylelint-config-recommended-scss": "^16.0.2",
+    "stylelint-order": "^7.0.0",
     "stylelint-scss": "^6.12.1"
   },
   "dependencies": {

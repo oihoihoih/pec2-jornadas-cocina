@@ -3,20 +3,20 @@
 @layer layouts {
   .speakers-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
     justify-content: center;
     padding: 2rem 6rem;
 
     // Container query for responsive layout
     container-type: inline-size;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 
   .modal-launcher {
     display: flex;
-    gap: 2rem;
     flex-direction: column;
     align-items: center;
     margin: 4rem 0;
+    gap: 2rem;
   }
 }
