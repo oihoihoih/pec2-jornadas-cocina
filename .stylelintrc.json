@@ -1,5 +1,5 @@
 {
-  "plugins": ["stylelint-scss", "stylelint-order"],
+  "plugins": ["stylelint-scss", "stylelint-order", "stylelint-declaration-strict-value"],
   "extends": ["stylelint-config-recommended-scss"],
   "rules": {
     "at-rule-no-unknown": null,
@@ -29,42 +29,53 @@
       }
     ],
     "scss/load-no-partial-leading-underscore": null,
-    "order/properties-order": [
-  [
-    "position",
-    "top",
-    "right",
-    "bottom",
-    "left",
-    "z-index",
+    "order/properties-order": 
+    [
+      [
+        "position",
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "z-index",
 
-    "display",
-    "flex",
-    "flex-direction",
-    "justify-content",
-    "align-items",
+        "display",
+        "flex",
+        "flex-direction",
+        "justify-content",
+        "align-items",
 
-    "width",
-    "height",
-    "margin",
-    "padding",
-    "border",
-    "border-radius",
+        "width",
+        "height",
+        "margin",
+        "padding",
+        "border",
+        "border-radius",
 
-    "font",
-    "font-size",
-    "font-weight",
-    "line-height",
-    "color",
+        "font",
+        "font-size",
+        "font-weight",
+        "line-height",
+        "color",
 
-    "background",
-    "background-color",
-    "opacity",
-    "box-shadow",
+        "background",
+        "background-color",
+        "opacity",
+        "box-shadow",
 
-    "transition"
-  ],
-  { "unspecified": "bottomAlphabetical" }
-]
+        "transition"
+      ],
+      { "unspecified": "bottomAlphabetical" }
+    ],
+    "scale-unlimited/declaration-strict-value": 
+    [
+      [
+        "/color$/", "color", "background-color", "border-color"
+      ],
+      {
+        "ignoreKeywords": ["transparent", "inherit", "currentColor"],
+        "ignoreValues": ["none"]
+      }
+    ]
   }
 }
