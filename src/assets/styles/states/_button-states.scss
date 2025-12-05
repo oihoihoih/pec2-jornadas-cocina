@@ -1,0 +1,7 @@
+@use "../abstracts" as *;
+
+
+.contact-form__submit:hover {
+        background-color: $color-black;
+        color: $color-white;
+    }

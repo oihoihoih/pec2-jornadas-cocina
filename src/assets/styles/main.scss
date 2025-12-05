@@ -32,5 +32,11 @@
 @use "modules/index" as modules;
 
 /**
+* Import states
+*/
+
+@use "states/index" as states;
+
+/**
  * Do NOT include anything else in this file!
  */
