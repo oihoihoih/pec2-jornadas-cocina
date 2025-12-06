@@ -3,8 +3,6 @@
 @layer layouts {
  
   /*Here styles for browsers that don't support css grid */
-
-  /* Video */
   .home-grid__video {
     overflow: hidden;
   }
@@ -17,26 +15,22 @@
     object-fit: cover;
   }
 
-  /* Title */
   .home-grid__title {
     font-weight: $font-bk;
     text-transform: uppercase;
   }
 
-  /* Subtitle */
   .home-grid__subtitle {
     font-size: 1.2rem;
     font-weight: $font-bk;
     text-align: center;
   }
 
-  /* Icons */
   .home-grid__icon1,
   .home-grid__icon2 {
     width: px-to-rem(48px);
   }
 
-  /* Contents */
   .home-grid__content {
     display: inline;
     text-align: center;

@@ -17,13 +17,14 @@ $info: $color-info;
 $light: $color-white;
 $dark: $color-black;
 
-/* Navbar overrides */
+/* Nav-link overrides */
 $nav-link-font-weight: 800;
 $nav-link-font-size: 1.5rem;
 
-/* Nav link overrides */
+/* Navbar overrides */
 $navbar-light-color: rgba($color-black, 1);
 $navbar-light-hover-color: $color-regular;
+$navbar-light-active-color: $color-regular;
 $navbar-padding-x: 5rem;
 
 /* Card overrides */

@@ -3,20 +3,45 @@
  * see commented examples below
  */
 // Import all of Bootstrap’s JS
+import { auto, clippingParents } from "@popperjs/core";
 import * as bootstrap from "bootstrap";
 
-// import 'some-node-module';
-// import SomeModule from 'some-node-module';
+import { gsap } from "gsap";
+import { SplitText } from "gsap/SplitText";
+
+gsap.registerPlugin(SplitText);
+
+// Animations for home page
+let split = new SplitText(".home-grid__title", { type: "chars" });
+
+const homeItems = document.querySelectorAll('.home-grid__content > *');
+
+gsap.from(split.chars, {
+  y: 100,
+  autoAlpha: 0,
+  stagger: 0.1
+});
+
+for (let i = 0; i < homeItems.length; i++) {
+  gsap.from(homeItems[i], {
+    y: 100,
+    autoAlpha: 0,
+    delay: 0.5 + i * 0.2,
+  });
+}
+
+// Animations for speakers page
+gsap.from(".card", {
+  y: 100,
+  autoAlpha: 0,
+  stagger: 0.1,
+})
+
 
 /**
  * Write any other JavaScript below
  */
 // Import all of Bootstrap’s JS
-
-+(function () {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-})();
 
 // Newsletter form validation
 const newsletterForm = document.getElementById("newsletterForm");
@@ -62,3 +87,13 @@ if (newsletterForm) {
     this.setCustomValidity("");
   });
 }
+
+const current = location.pathname;
+
+  document.querySelectorAll('.nav-link').forEach(link => {
+    if (link.getAttribute('href') === current) {
+      console.log(link.getAttribute('href'), current)
+      link.classList.add('active');
+          link.setAttribute('aria-current', 'page'); 
+    }
+  })
