@@ -37,11 +37,11 @@ gsap.from(".card", {
   stagger: 0.1,
 })
 
-
-/**
- * Write any other JavaScript below
- */
-// Import all of Bootstrap’s JS
+// Animations for blog page
+gsap.from(".blog-post, .contact-grid, .home-grid, speakers", {
+  autoAlpha: 0,
+  duration: 1
+})
 
 // Newsletter form validation
 const newsletterForm = document.getElementById("newsletterForm");
