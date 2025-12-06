@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+@layer layouts {
+  .footer {
+    background-color: $color-black;
+    color: $color-white;
+    text-align: center;
+    padding: px-to-rem(16px);
+    container-type: inline-size;
+    container-name: footer-container
+  }
+
+  .nav-link {
+    color: $color-white;
+    font-weight: $font-medium;
+  }
+  .navbar {
+
+    @container footer-container (max-width: 992px) {
+      display: none;
+    }
+  }
+}
