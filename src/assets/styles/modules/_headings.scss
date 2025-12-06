@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as *;
+
+@layer modules {
+  .display-heading {
+    font-size: clamp(2rem, 4vw, 6rem);
+    font-weight: $font-thin;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+
+    &--dark {
+      color: $color-black;
+    }
+
+    & span {
+      display: block;
+    }
+  }
+}

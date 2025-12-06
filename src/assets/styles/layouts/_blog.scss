@@ -1,108 +1,110 @@
 @use "../abstracts" as *;
 
-.blog-post {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  container-name: blog-post;
-  container-type: inline-size;
-  gap: 1rem;
-
-  &__hero {
-    position: relative;
+@layer layouts {
+  .blog-post {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 50vh;
-
-    &--image {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    &--header {
-      position: absolute;
-      top: 50%;
-      max-width: 60%;
-
-      & h2 {
-        font-size: clamp(2rem, 4vw, 4rem);
-        font-weight: $font-bk;
-        line-height: 0.8;
-        text-transform: uppercase;
-      }
-    }
-
-    :where(h2, p) {
-      color: $color-regular;
-      text-align: center;
-    }
-  }
-
-  &__content {
-    width: 50vw;
-
-    @container blog-post (max-width: 768px) {
-      width: 90vw;
-    }
-  }
-
-  &__content:has(> figure + p) {
-    display: flex;
+    container-name: blog-post;
+    container-type: inline-size;
     gap: 1rem;
 
-    @container blog-post (max-width: 768px) {
-      flex-direction: column;
-    }
-  }
-
-  figure:has(blockquote) {
-    padding: px-to-rem(16px);
-    border-left: 4px solid $color-regular;
-  }
-
-  &__list {
-    border-bottom: 1px solid $color-grey;
-    border-top: 1px solid $color-grey;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    padding-top: 2rem;
-
-    &--number {
-      position: absolute;
-      left: 0;
+    &__hero {
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 2rem;
-      height: 2rem;
-      border: 1px solid $color-grey;
-      border-radius: 50%;
-      text-align: center;
+      width: 100%;
+      height: 50vh;
+
+      &--image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &--header {
+        position: absolute;
+        top: 50%;
+        max-width: 60%;
+
+        & h2 {
+          font-size: clamp(2rem, 4vw, 4rem);
+          font-weight: $font-bk;
+          line-height: 0.8;
+          text-transform: uppercase;
+        }
+      }
+
+      :where(h2, p) {
+        color: $color-regular;
+        text-align: center;
+      }
     }
 
-    &--heading {
+    &__content {
+      width: 50vw;
+
+      @container blog-post (max-width: 768px) {
+        width: 90vw;
+      }
+    }
+
+    &__content:has(> figure + p) {
+      display: flex;
+      gap: 1rem;
+
+      @container blog-post (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    figure:has(blockquote) {
+      padding: px-to-rem(16px);
+      border-left: 4px solid $color-regular;
+    }
+
+    &__list {
+      border-bottom: 1px solid $color-grey;
+      border-top: 1px solid $color-grey;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      padding-top: 2rem;
+
+      &--number {
+        position: absolute;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid $color-grey;
+        border-radius: 50%;
+        text-align: center;
+      }
+
+      &--heading {
+        margin-left: 2.5rem;
+      }
+    }
+
+    dt:has(span) {
+      position: relative;
+      display: flex;
+    }
+
+    dd:has(p) {
       margin-left: 2.5rem;
     }
-  }
 
-  dt:has(span) {
-    position: relative;
-    display: flex;
-  }
+    &__carousel {
+      width: 70vw;
 
-  dd:has(p) {
-    margin-left: 2.5rem;
-  }
-
-  &__carousel {
-    width: 70vw;
-
-    @container blog-post (max-width: 768px) {
-      width: 90vw;
+      @container blog-post (max-width: 768px) {
+        width: 90vw;
+      }
     }
   }
 }

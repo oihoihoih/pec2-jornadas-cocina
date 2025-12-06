@@ -1,46 +1,35 @@
 @use "../abstracts" as *;
 
-.contact-grid {
-  display: grid;
-  width: 100vw;
-  height: 100%;
-  padding: 10vh 10vh 0 10vh;
-  container-name: contact-grid;
+@layer layouts {
+  .contact-grid {
+    display: grid;
+    width: 100vw;
+    height: 100%;
+    padding: 10vh 10vh 0 10vh;
+    container-name: contact-grid;
+    container-type: inline-size;
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
 
-  container-type: inline-size;
-  gap: 1rem;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(3, auto);
+    &__heading {
+      grid-column: 1 / span 6;
+      grid-row: 1 / span 2;
 
-  &__heading {
-    grid-column: 1 / span 6;
-    grid-row: 1 / span 2;
-
-    @container contact-grid (max-width: 768px) {
-      grid-column: 1 / span 12;
-      grid-row: 1;
-    }
-
-    h2:has(span) {
-      font-size: clamp(2rem, 4vw, 6rem);
-      font-weight: $font-thin;
-      line-height: 1.2;
-      color: $color-complementary;
-      text-transform: uppercase;
-
-      & span {
-        display: block;
+      @container contact-grid (max-width: 768px) {
+        grid-column: 1 / span 12;
+        grid-row: 1;
       }
     }
-  }
 
-  &__form {
-    grid-column: 7 / span 6;
-    grid-row: 2 / span 2;
+    &__form {
+      grid-column: 7 / span 6;
+      grid-row: 2 / span 2;
 
-    @container contact-grid (max-width: 768px) {
-      grid-column: 1 / span 12;
-      grid-row: 2;
+      @container contact-grid (max-width: 768px) {
+        grid-column: 1 / span 12;
+        grid-row: 2;
+      }
     }
   }
 }
