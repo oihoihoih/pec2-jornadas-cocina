@@ -7,7 +7,7 @@
     align-items: center;
     container-name: blog-post;
     container-type: inline-size;
-    gap: 1rem;
+    gap: 2cqi;
 
     &__hero {
       position: relative;
@@ -15,7 +15,7 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 50vh;
+      height: 50cqb;
 
       &--image {
         display: block;
@@ -30,7 +30,7 @@
         max-width: 60%;
 
         & h2 {
-          font-size: clamp(2rem, 4vw, 4rem);
+          font-size: clamp(2rem, 4cqi, 4rem); 
           font-weight: $font-bk;
           line-height: 0.8;
           text-transform: uppercase;
@@ -39,21 +39,23 @@
 
       :where(h2, p) {
         color: $color-regular;
+        color: color(display-p3 0.99 0.3 0.11);
         text-align: center;
       }
     }
 
     &__content {
-      width: 50vw;
+        width: 80cqi;
+        max-width: 65ch;
 
       @container blog-post (max-width: 768px) {
-        width: 90vw;
+        width: 95cqi;
       }
     }
 
     &__content:has(> figure + p) {
       display: flex;
-      gap: 1rem;
+      gap: 1cqi;
 
       @container blog-post (max-width: 768px) {
         flex-direction: column;
@@ -63,6 +65,7 @@
     figure:has(blockquote) {
       padding: px-to-rem(16px);
       border-left: 4px solid $color-regular;
+      border-left: 4px solid color(display-p3 0.99 0.3 0.11);
     }
 
     &__list {
@@ -78,8 +81,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 2rem;
-        height: 2rem;
+        width: 4cqmin;
+        height: 4cqmin;
         border: 1px solid $color-grey;
         border-radius: 50%;
         text-align: center;
@@ -100,10 +103,10 @@
     }
 
     &__carousel {
-      width: 70vw;
+      width: 60cqi;
 
       @container blog-post (max-width: 768px) {
-        width: 90vw;
+        width: 95cqi;
       }
     }
   }
