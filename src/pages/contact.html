@@ -1,86 +1,77 @@
 <!doctype html>
 
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="../assets/styles/main.scss" />
-    <!-- do not remove this line! -->
-    <title>Fogonazo! Contact</title>
-  </head>
 
-  <body>
-    <include src="./views/header.html"></include>
-    <main class="contact-grid">
-      <h1 class="visually-hidden">Contact</h1>
-      <section class="contact-grid__heading">
-        <h2 class="display-heading display-heading--dark">
-          <span>Todo empieza aquí</span><span>Contacta con nosotros</span
-          ><span>y cuéntanos tu historia</span>
-        </h2>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../assets/styles/main.scss" />
+  <!-- do not remove this line! -->
+  <title>Fogonazo! Contact</title>
+</head>
 
-      <section class="contact-grid__form">
-        <!-- https://www.elicyon.com/contact -->
-        <form
-          class="contact-form"
-          name="contact-form"
-          method="POST"
-          data-netlify="true"
-        >
-          <div class="contact-form__identification">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Nombre completo"
-              required
-            />
+<body>
+  <include src="./views/header.html"></include>
+  <main class="contact-grid">
+    <h1 class="visually-hidden">Contact</h1>
+    <section class="contact-grid__heading">
+      <h2 class="display-heading display-heading--dark">
+        <span>Todo empieza aquí</span><span>Contacta con nosotros</span><span>y cuéntanos tu historia</span>
+      </h2>
+    </section>
 
-            <input
-              type="text"
-              name="surname"
-              id="surname"
-              placeholder="Apellidos"
-              required
-            />
-          </div>
-          <div class="contact-form__contact">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Correo electrónico"
-              required
-            />
-
-            <input type="tel" name="phone" id="phone" placeholder="Teléfono" />
-          </div>
-          <div class="contact-form__message">
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Escribe tu mensaje aquí..."
-              required
-            ></textarea>
+    <section class="contact-grid__form">
+      <form class="contact-form" name="contact-form" method="POST" data-netlify="true" novalidate>
+        <div class="contact-form__identification">
+          <div class="field-group">
+            <input type="text" name="name" id="name" placeholder="Nombre completo" required
+              aria-describedby="error-name" />
+            <span class="error-message" id="error-name"></span>
           </div>
 
-          <div>
-            <button class="main-button contact-form__submit" type="submit">
-              Enviar
-            </button>
+          <div class="field-group">
+            <input type="text" name="surname" id="surname" placeholder="Apellidos" required
+              aria-describedby="error-surname" />
+            <span class="error-message" id="error-surname"></span>
           </div>
-        </form>
-      </section>
-    </main>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="../assets/scripts/main.js"></script>
-    <!-- do not remove this line! -->
-  </body>
+        </div>
+
+        <div class="contact-form__contact">
+          <div class="field-group">
+            <input type="email" name="email" id="email" placeholder="Correo electrónico" required
+              aria-describedby="error-email" />
+            <span class="error-message" id="error-email"></span>
+          </div>
+
+          <div class="field-group">
+            <input type="tel" name="phone" id="phone" placeholder="Teléfono" pattern="^[0-9+()\\s-]{7,15}$"
+              aria-describedby="error-phone" />
+            <span class="error-message" id="error-phone"></span>
+          </div>
+        </div>
+
+        <div class="contact-form__message field-group">
+          <textarea name="message" id="message" placeholder="Escribe tu mensaje aquí..." required
+            aria-describedby="error-message"></textarea>
+          <span class="error-message" id="error-message"></span>
+        </div>
+
+        <div>
+          <button class="main-button contact-form__submit" type="submit">
+            Enviar
+          </button>
+        </div>
+      </form>
+
+    </section>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="../assets/scripts/main.js"></script>
+  <!-- do not remove this line! -->
+</body>
+
 </html>

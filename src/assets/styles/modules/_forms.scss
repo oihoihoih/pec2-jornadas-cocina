@@ -23,4 +23,18 @@
       border-bottom: 1px solid $color-black;
     }
   }
+
+  .field-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.error-message {
+  color: $color-regular;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  min-height: 1rem;
+}
+
 }

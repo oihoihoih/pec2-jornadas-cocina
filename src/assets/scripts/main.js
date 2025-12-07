@@ -97,3 +97,35 @@ document.querySelectorAll(".nav-link").forEach((link) => {
     link.setAttribute("aria-current", "page");
   }
 });
+
+// Contact-form validation
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form[data-netlify='true']");
+  const fields = form.querySelectorAll("input, textarea");
+
+  form.addEventListener("submit", (event) => {
+    let isValid = true;
+
+    fields.forEach((field) => {
+      const errorSpan = document.getElementById(`error-${field.id}`);
+      errorSpan.textContent = "";
+
+      if (!field.checkValidity()) {
+        isValid = false;
+
+        // Custom messages
+        if (field.validity.valueMissing) {
+          errorSpan.textContent = "Este campo es obligatorio.";
+        } else if (field.validity.typeMismatch) {
+          errorSpan.textContent = "Introduce un formato válido.";
+        } else if (field.validity.patternMismatch) {
+          errorSpan.textContent = "Introduce un número de teléfono válido.";
+        }
+      }
+    });
+
+    if (!isValid) {
+      event.preventDefault(); 
+    }
+  });
+});
