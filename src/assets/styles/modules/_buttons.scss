@@ -1,9 +1,8 @@
 @use "../abstracts" as *;
 
 @layer modules {
-
-    /* Contact Form Buttons */
-    .main-button {
+  /* Contact Form Buttons */
+  .main-button {
     width: fit-content;
     padding: 0.75rem 2rem;
     border: 1px solid $color-black;
@@ -13,5 +12,5 @@
     background-color: transparent;
     cursor: pointer;
     text-transform: uppercase;
-    }
+  }
 }
