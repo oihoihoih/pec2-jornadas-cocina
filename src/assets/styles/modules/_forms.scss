@@ -27,6 +27,7 @@
       border-bottom: 1px solid $color-black;
     }
   }
+}
 
   .field-group {
     display: flex;
@@ -34,9 +35,9 @@
   }
 
   .error-message {
-    color: $color-regular;
     font-size: 0.85rem;
+    color: $color-regular;
     margin-top: 0.25rem;
     min-height: 1rem;
   }
-}
+
