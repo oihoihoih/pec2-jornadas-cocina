@@ -5,8 +5,8 @@
     font-size: clamp(2rem, 4vw, 6rem);
     font-weight: $font-thin;
     line-height: 1.2;
-    text-transform: uppercase;
     letter-spacing: -2px;
+    text-transform: uppercase;
 
     &--dark {
       color: $color-black;

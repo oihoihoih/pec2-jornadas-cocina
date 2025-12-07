@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 @layer layouts {
- 
+  
   /*Here styles for browsers that don't support css grid */
   .home-grid__video {
     overflow: hidden;

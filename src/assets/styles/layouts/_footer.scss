@@ -2,20 +2,20 @@
 
 @layer layouts {
   .footer {
-    background-color: $color-black;
-    color: $color-white;
-    text-align: center;
     padding: px-to-rem(16px);
-    container-type: inline-size;
-    container-name: footer-container
-  }
-
-  .nav-link {
     color: $color-white;
-    font-weight: $font-medium;
-  }
-  .navbar {
+    background-color: $color-black;
+    container-name: footer-container;
+    container-type: inline-size;
+    text-align: center;
 
+    .nav-link {
+      font-weight: $font-medium;
+      color: $color-white;
+    }
+  }
+
+  .navbar {
     @container footer-container (max-width: 992px) {
       display: none;
     }

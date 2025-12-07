@@ -30,7 +30,7 @@
         max-width: 60%;
 
         & h2 {
-          font-size: clamp(2rem, 4cqi, 4rem); 
+          font-size: clamp(2rem, 4cqi, 4rem);
           font-weight: $font-bk;
           line-height: 0.8;
           text-transform: uppercase;
@@ -45,8 +45,8 @@
     }
 
     &__content {
-        width: 80cqi;
-        max-width: 65ch;
+      width: 80cqi;
+      max-width: 65ch;
 
       @container blog-post (max-width: 768px) {
         width: 95cqi;

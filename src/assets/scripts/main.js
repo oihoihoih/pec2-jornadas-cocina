@@ -11,15 +11,15 @@ import { SplitText } from "gsap/SplitText";
 
 gsap.registerPlugin(SplitText);
 
-// Animations for home page
+// GSAP Animations for home page
 let split = new SplitText(".home-grid__title", { type: "chars" });
 
-const homeItems = document.querySelectorAll('.home-grid__content > *');
+const homeItems = document.querySelectorAll(".home-grid__content > *");
 
 gsap.from(split.chars, {
   y: 100,
   autoAlpha: 0,
-  stagger: 0.1
+  stagger: 0.1,
 });
 
 for (let i = 0; i < homeItems.length; i++) {
@@ -35,13 +35,13 @@ gsap.from(".card", {
   y: 100,
   autoAlpha: 0,
   stagger: 0.1,
-})
+});
 
 // Animations for blog page
 gsap.from(".blog-post, .contact-grid, .home-grid, speakers", {
   autoAlpha: 0,
-  duration: 1
-})
+  duration: 1,
+});
 
 // Newsletter form validation
 const newsletterForm = document.getElementById("newsletterForm");
@@ -90,10 +90,10 @@ if (newsletterForm) {
 
 const current = location.pathname;
 
-  document.querySelectorAll('.nav-link').forEach(link => {
-    if (link.getAttribute('href') === current) {
-      console.log(link.getAttribute('href'), current)
-      link.classList.add('active');
-          link.setAttribute('aria-current', 'page'); 
-    }
-  })
+document.querySelectorAll(".nav-link").forEach((link) => {
+  if (link.getAttribute("href") === current) {
+    console.log(link.getAttribute("href"), current);
+    link.classList.add("active");
+    link.setAttribute("aria-current", "page");
+  }
+});
