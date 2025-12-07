@@ -101,6 +101,9 @@ document.querySelectorAll(".nav-link").forEach((link) => {
 // Contact-form validation
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form[data-netlify='true']");
+  
+  if (!form) return;
+  
   const fields = form.querySelectorAll("input, textarea");
 
   form.addEventListener("submit", (event) => {
